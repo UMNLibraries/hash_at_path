@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["libsys@gmail.com"]
 
   spec.summary       = %q{Extends Hash with xpath like syntax for retrieving hash values.}
+  spec.homepage      = "https://github.com/UMNLibraries/hash_at_path"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
