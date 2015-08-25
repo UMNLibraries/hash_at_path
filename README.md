@@ -1,4 +1,4 @@
-# HashPath
+# HashAtPath
 
 Provides a simple xpath-like syntax for retrieving values from a hash.
 
@@ -7,7 +7,7 @@ Provides a simple xpath-like syntax for retrieving values from a hash.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'hash_path'
+gem 'hash_at_path'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install hash_path
+    $ gem install hash_at_path
 
 ## Usage
 
@@ -47,7 +47,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/hash_path/fork )
+1. Fork it ( https://github.com/chadfennell/hash_at_path/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

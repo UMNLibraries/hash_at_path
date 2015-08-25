@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe HashPath do
+describe HashAtPath do
   it 'has a version number' do
-    expect(HashPath::VERSION).not_to be nil
+    expect(HashAtPath::VERSION).not_to be nil
   end
 
   it "returns nil when the path ain't found" do

@@ -1,4 +1,4 @@
-module HashesToHashes
+module HashAtPath
   module CoreExt
     module Hash
       module AtPath

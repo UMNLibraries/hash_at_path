@@ -1,4 +1,4 @@
-module HashesToHashes
+module HashAtPath
   class Path
     class << self
       def parse(path_string)

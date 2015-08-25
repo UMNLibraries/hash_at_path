@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'hash_path/version'
+require 'hash_at_path/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "hash_path"
-  spec.version       = HashPath::VERSION
+  spec.name          = "hash_at_path"
+  spec.version       = HashAtPath::VERSION
   spec.authors       = ["chadfennell"]
   spec.email         = ["libsys@gmail.com"]
 
