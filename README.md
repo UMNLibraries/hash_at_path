@@ -26,6 +26,7 @@ Paths are delimited with forward slashes and predicates are enclosed by brackets
 | ------------- |:-------------|
 | [first()] | select the first item from an array|
 | [last()]  | select the last item from an array |
+| [0]  | select an array item at a given index |
 | [*]       | all items (path selections that follow this declaration will be applied to each element) |
 
 
