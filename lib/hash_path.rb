@@ -1,5 +1,5 @@
 require "hash_path/version"
+require "hash_path/path"
+require "hash_path/core_ext/hash/at_path"
 
-module HashPath
-  # Your code goes here...
-end
+Hash.include HashesToHashes::CoreExt::Hash::AtPath
