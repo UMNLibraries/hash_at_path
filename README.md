@@ -22,6 +22,13 @@ Or install it yourself as:
 
 Paths are delimited with forward slashes and predicates are enclosed by brackets:
 
+| Predicate     | Meaning       |
+| ------------- |:-------------|
+| [first()] | select the first item from an array|
+| [last()]  | select the last item from an array |
+| [*]       | all items (path selections that follow this declaration will be applied to each element) |
+
+
 ```
 > {'foo' => ['bar', 'baz']}.at_path('/')
 {'foo' => ['bar', 'baz']}
