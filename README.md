@@ -1,5 +1,7 @@
 # HashAtPath
 
+[![Build Status](https://travis-ci.org/UMNLibraries/hash_at_path.svg?branch=master)](https://travis-ci.org/UMNLibraries/hash_at_path)
+
 Provides a simple xpath-like syntax for retrieving values from a hash.
 
 ## Installation
