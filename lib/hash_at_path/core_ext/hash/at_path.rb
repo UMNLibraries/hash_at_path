@@ -20,16 +20,16 @@ module HashAtPath
             return nil if val.nil?
             predicate = path_parts[:predicate] unless predicate == '*'
             val, predicate = get_value_at_path(predicate, path_parts[:path], val)
-            val = val[predicate.to_i] unless blank?(predicate) || predicate == '*' || !issa(val, 'Array')
+            val = val[predicate.to_i] unless is_blank?(predicate) || predicate == '*' || !issa(val, 'Array')
           end
           val
         end
 
         def get_value_at_path(predicate, path, val)
-          if predicate == '*' && issa(val, 'Array') && !blank?(path)
+          if predicate == '*' && issa(val, 'Array') && !is_blank?(path)
             val = val.map {|item| unwind_path(item, path)}
             predicate = nil
-          elsif !blank?(path) && issa(val, 'Hash')
+          elsif !is_blank?(path) && issa(val, 'Hash')
             val = unwind_path(val, path)
           end
           [val, predicate]
@@ -49,7 +49,7 @@ module HashAtPath
         end
 
         # Stolen from activesupport/lib/active_support/core_ext/object/blank.rb
-        def blank?(object)
+        def is_blank?(object)
           object.respond_to?(:empty?) ? !!object.empty? : !object
         end
       end
