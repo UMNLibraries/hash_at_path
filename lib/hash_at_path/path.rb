@@ -3,7 +3,7 @@ module HashAtPath
     class << self
       def parse(path_string)
         path_string = replace_predicates(path_string)
-        vals = extract_path_data(path_string)
+        extract_path_data(path_string)
       end
 
       def replace_predicates(path_string)
