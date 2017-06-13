@@ -4,7 +4,6 @@ module HashAtPath
       module AtPath
         # Returns a value at the end of an xpath-like/lite path
         def at_path(path)
-          out = {}
           if path == '/'
               self
           else
